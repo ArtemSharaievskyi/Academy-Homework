@@ -1,0 +1,9 @@
+.highlight {
+    color: white;
+    background-color: green;
+    font-weight: bold;
+}
+.original {
+    color: black;
+    background-color: white;
+}
