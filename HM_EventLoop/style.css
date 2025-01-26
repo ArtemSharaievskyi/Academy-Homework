@@ -1,0 +1,11 @@
+ /* Завдання 4: Створення анімації об'єкта */
+ .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: transform 1s;
+}
+
+.animate {
+    transform: rotate(360deg);
+}
