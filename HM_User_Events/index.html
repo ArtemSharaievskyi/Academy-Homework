@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_User Events</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Task 1: Create two cubes -->
+<div class="container">
+    <div id="cube1" class="cube" style="background-color: red;"></div>
+    <div id="cube2" class="cube" style="background-color: blue;"></div>
+</div>
+
+<!-- Task 2: Create a text block -->
+<div id="text-block" style="margin: 20px; border: 1px solid black; padding: 10px;">
+    This text cannot be copied.
+</div>
+
+<!-- Task 3: Create a cube that changes color based on coordinates -->
+<div id="coordinate-cube" class="cube" style="background-color: gray;"></div>
+
+<!-- Task 4: Create 3 nested cubes that log information on click -->
+<div id="nested1" class="cube nested" style="background-color: pink;">
+    <div id="nested2" class="cube nested" style="background-color: purple;">
+        <div id="nested3" class="cube nested" style="background-color: teal;"></div>
+    </div>
+</div>
+
+<!-- Task 5: Nested cubes with modified event flow -->
+<div id="outer" class="cube" style="background-color: yellow;">
+    <div id="middle" class="cube" style="background-color: orange;">
+        <div id="inner" class="cube" style="background-color: green;"></div>
+    </div>
+</div>
+
+<!-- Task 6: Form example -->
+<form id="example-form" style="margin: 20px; margin-top: 70px;">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.nested {
+    position: absolute;
+}
