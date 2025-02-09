@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.validation-container {
+    margin-top: 20px;
+}
+.valid {
+    color: green;
+}
+.invalid {
+    color: red;
+}
