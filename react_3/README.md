@@ -15,7 +15,7 @@ This project is a homework assignment demonstrating the use of React components,
 - Each of these components receives an object with arbitrary information (e.g., title and description) via props.
 - **Content**
 - A Content component has been created, which defines an object with two fields: title and describe.
-- The object's data is displayed using JSX: title inside an <h1> tag, and describe inside a <p> tag.
+- The object's data is displayed using JSX
 - **Count**
 -Inside the Content component, a Count component is embedded, implementing a simple counter using the React useState hook.
 - The counter includes buttons for increasing and decreasing the value.
