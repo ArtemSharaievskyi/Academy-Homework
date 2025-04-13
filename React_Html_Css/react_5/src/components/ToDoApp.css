@@ -1,0 +1,20 @@
+.todo-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    font-family: sans-serif;
+  }
+  
+  .input-group, .select-group {
+    margin-bottom: 1rem;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
