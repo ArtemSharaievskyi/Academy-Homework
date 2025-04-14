@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ControlledForm() {
+function ControlledForm() {
   const [form, setForm] = useState({
     name: "",
     password: "",
@@ -18,7 +18,7 @@ export default function ControlledForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Дані форми:", form);
+    console.log(form);
   };
 
   return (
@@ -31,7 +31,7 @@ export default function ControlledForm() {
           name="name"
           value={form.name}
           onChange={handleChange}
-          className="input border rounded px-2 py-1 w-full"
+          className="input"
         />
       </label>
 
@@ -42,7 +42,7 @@ export default function ControlledForm() {
           name="password"
           value={form.password}
           onChange={handleChange}
-          className="input border rounded px-2 py-1 w-full"
+          className="input"
         />
       </label>
 
@@ -53,7 +53,7 @@ export default function ControlledForm() {
           name="confirmPassword"
           value={form.confirmPassword}
           onChange={handleChange}
-          className="input border rounded px-2 py-1 w-full"
+          className="input"
         />
       </label>
 
@@ -64,13 +64,13 @@ export default function ControlledForm() {
           name="birthDate"
           value={form.birthDate}
           onChange={handleChange}
-          className="input border rounded px-2 py-1 w-full"
+          className="input"
         />
       </label>
 
       <label className="block">
         Стать:
-        <select name="gender" value={form.gender} onChange={handleChange} className="input border rounded px-2 py-1 w-full">
+        <select name="gender" value={form.gender} onChange={handleChange} className="input">
           <option value="">Оберіть</option>
           <option value="male">Чоловіча</option>
           <option value="female">Жіноча</option>
@@ -84,7 +84,7 @@ export default function ControlledForm() {
           name="age"
           value={form.age}
           onChange={handleChange}
-          className="input border rounded px-2 py-1 w-full"
+          className="input"
         />
       </label>
 
@@ -94,7 +94,7 @@ export default function ControlledForm() {
           name="description"
           value={form.description}
           onChange={handleChange}
-          className="input border rounded px-2 py-1 w-full"
+          className="input"
         />
       </label>
 
@@ -104,3 +104,5 @@ export default function ControlledForm() {
     </form>
   );
 }
+
+export default ControlledForm;
