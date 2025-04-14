@@ -1,0 +1,65 @@
+
+/* Основний контейнер для списку постів */
+.posts-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Заголовок сторінки */
+  .posts-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Стилізація списку постів */
+  .posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Кожен елемент списку постів */
+  .post-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Заголовок поста */
+  .post-title {
+    font-size: 1.1rem;
+    color: #444;
+    flex: 1;
+  }
+  
+  /* Кнопка для перегляду деталей поста */
+  .details-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+  }
+  
+  .details-button:hover {
+    background-color: #555;
+  }
+  
