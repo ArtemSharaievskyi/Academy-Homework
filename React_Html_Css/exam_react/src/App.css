@@ -1,0 +1,160 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+.nav-bar {
+  background: #282c34;
+  padding: 10px 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* SearchBar */
+.search-bar {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ExpenseList and Item */
+.expense-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.expense-item .info h4 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.expense-item .info p {
+  margin: 3px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.expense-item .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.expense-item .actions a,
+.expense-item .actions button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.expense-item .actions button {
+  background: #dc3545;
+}
+
+.expense-item .actions a:hover,
+.expense-item .actions button:hover {
+  opacity: 0.9;
+}
+
+/* ExpenseForm */
+.expense-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.expense-form div {
+  margin-bottom: 15px;
+}
+
+.expense-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.expense-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.expense-form .error {
+  color: #d9534f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.expense-form button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expense-form button:hover {
+  background: #218838;
+}
+
+/* Charts */
+.chart-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .chart-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
