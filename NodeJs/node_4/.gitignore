@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv files
+.env
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.nyc_output/
+coverage/
+
+# Build output
+dist/
+build/
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Output directories (custom)
+output/

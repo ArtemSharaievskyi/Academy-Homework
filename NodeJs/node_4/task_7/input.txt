@@ -1,0 +1,1 @@
+foo is a placeholder. foo should be replaced.
