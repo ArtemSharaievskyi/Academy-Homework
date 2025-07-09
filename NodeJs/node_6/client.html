@@ -1,0 +1,65 @@
+<!-- client.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FakeStore Client</title>
+</head>
+<body>
+  <h1>Продукти</h1>
+  <button id="load">Завантажити</button>
+  <button id="sortName">Сортувати за назвою</button>
+  <button id="sortPrice">Сортувати за ціною</button>
+  <ul id="list"></ul>
+
+  <script>
+    const listEl = document.getElementById('list');
+    let prods = [];
+
+    async function fetchProducts() {
+      prods = await fetch('/products').then(r=>r.json());
+      render(prods);
+    }
+    function render(arr) {
+      listEl.innerHTML = '';
+      arr.forEach(p => {
+        const li = document.createElement('li');
+        li.textContent = `${p.title} — $${p.price} — stock: ${p.stock}`;
+        // кнопка купити 1 шт.
+        const btn = document.createElement('button');
+        btn.textContent = 'Купити';
+        btn.onclick = async () => {
+          const res = await fetch('/products/purchase', {
+            method: 'POST',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({productId: p.id, quantity: 1})
+          });
+          const json = await res.json();
+          alert(JSON.stringify(json));
+          fetchProducts();
+        };
+        li.appendChild(btn);
+        listEl.appendChild(li);
+      });
+    }
+
+    document.getElementById('load').onclick = fetchProducts;
+    document.getElementById('sortName').onclick = async () => {
+      const sorted = await fetch('/products/sort', {
+        method: 'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({field:'title', order:'asc'})
+      }).then(r=>r.json());
+      render(sorted);
+    };
+    document.getElementById('sortPrice').onclick = async () => {
+      const sorted = await fetch('/products/sort', {
+        method: 'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({field:'price', order:'asc'})
+      }).then(r=>r.json());
+      render(sorted);
+    };
+  </script>
+</body>
+</html>
