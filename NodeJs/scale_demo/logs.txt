@@ -1,0 +1,3 @@
+ERROR Something bad happened
+INFO All good
+ERROR Another error occurred
