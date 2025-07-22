@@ -1,0 +1,101 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header div {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.header button:hover {
+  background-color: #c12738;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.addPost {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+.addPost button {
+  background-color: #457b9d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.addPost button:hover {
+  background-color: #35607a;
+}
+
+.item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text {
+  font-size: 16px;
+  color: #333;
+}
+
+.name {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+
+.likes {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.like {
+  width: fit-content;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.like:hover {
+  background-color: #21867a;
+}
